@@ -12,6 +12,8 @@ El proyecto consiste en realizar la maquetación de un diseño cumpliendo los Us
 
 Un pequeño _showcase_ del proyecto en web.
 
+[Enlace a la aplicación] (https://sleepy-stonebraker-0f30fb.netlify.app/)
+
 ![](./src/assets/web.jpg)
 
 ## Pre-requisitos 📋
