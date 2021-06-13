@@ -6,7 +6,7 @@ Hola!, me da gusto que vengas a este repositorio, este contenido ha sido realiza
 
 El proyecto consiste en realizar la maquetación de un diseño cumpliendo los User Tasks solicitados, el diseño es el siguiente:
 
-![](./src/assets/figma.png)
+![](./src/assets/figma.PNG)
 
 ## Muestra 👀
 
