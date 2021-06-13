@@ -2,8 +2,6 @@
 
 ## Presentación 👋
 
----
-
 Hola!, me da gusto que vengas a este repositorio, este contenido ha sido realizado como parte de un Hackathon organizado por [Nuwe](nuwe.io).
 
 El proyecto consiste en realizar la maquetación de un diseño cumpliendo los User Tasks solicitados, el diseño es el siguiente:
@@ -12,15 +10,11 @@ El proyecto consiste en realizar la maquetación de un diseño cumpliendo los Us
 
 ## Muestra 👀
 
----
-
 Un pequeño _showcase_ del proyecto en web.
 
 ![](./src/assets/web.jpg)
 
 ## Pre-requisitos 📋
-
----
 
 Necesario para correr el proyecto, no me sucede pero hay algunos a quien les pasa que no pueden alzar el repositorio.
 
@@ -30,7 +24,6 @@ Necesario para correr el proyecto, no me sucede pero hay algunos a quien les pas
 
 
 ## Comencemos 🚀
----
 
 Para empezar ejecutemos los siguientes comandos en ese orden:
 ~~~
@@ -46,15 +39,11 @@ Y listo, puedes probar y jugar con el código :)
 
 ## Construido con 🛠️
 
----
-
 - ### React JS - Framework JS
 - ### Tailwind CSS - Framework CSS
 
 
 ## Licencia 📄
-
----
 
 Este proyecto está bajo la Licencia (MIT) - puedes mirar clonar y utilizar el código como gustes.
 
