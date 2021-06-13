@@ -1,0 +1,49 @@
+:root {
+    --color-primary: #4F934A;
+}
+
+/* Rightside First Step */
+.arrow {
+    color: transparent
+}
+
+.card:active .arrow {
+    color: var(--color-primary);
+}
+
+.card:active {
+    background-color: #F5F9FF;
+    border: 1px solid var(--color-primary);
+}
+
+/* Rightside Second Step */
+.input:focus {
+    border: 1px solid var(--color-primary);
+    box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.06);
+    outline: none;
+}
+
+.btn:focus {
+    outline: none
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox:checked {
+    background-color: var(--color-primary);
+}
