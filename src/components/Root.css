@@ -2,7 +2,7 @@
     --color-primary: #4F934A;
 }
 
-/* Rightside First Step */
+/* Rightside Prev Step */
 .arrow {
     color: transparent
 }
@@ -16,34 +16,76 @@
     border: 1px solid var(--color-primary);
 }
 
-/* Rightside Second Step */
+/* Rightside First Step */
 .input:focus {
     border: 1px solid var(--color-primary);
     box-shadow: 0px 2px 7px 1px rgba(0,0,0,0.06);
     outline: none;
 }
 
+.input::placeholder {
+    font-size: 14px;
+}
+
+h4 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10); 
+    line-height: 0.1em;
+    opacity: 0.5;
+    margin: 10px 0 20px; 
+ } 
+ 
+ h4 span { 
+     background:#fff; 
+     padding:0 30px; 
+ }
+
 .btn:focus {
     outline: none
 }
 
-.checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+#check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+    position: absolute;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
 }
 
-.checkbox:checked {
+#check input:checked ~ .checkmark {
+    background-color: white;
     background-color: var(--color-primary);
+}
+
+.checkmark:after {
+    content: "";    
+    position: absolute;
+    display: none;
+}
+
+#check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+#check .checkmark:after {
+    left: 5.5px;
+    top: 2.5px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
