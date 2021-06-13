@@ -1,26 +1,38 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Button } from '../Button'
 import { FormInput } from '../FormInput'
 import { StepContext } from '../../../context/StepContext'
+import SuccessCheck from '../../../assets/successCheck.png'
+import { Modal } from '../Modal'
 import '../../Root.css'
 
 export const ThirdStep = () => {
 
-    const [step, setStep] = useContext(StepContext)
+    const [step, setStep] = useContext(StepContext);
+    const [show, setShow] = useState(false);
+    const [creditNumber, setCreditNumber] = useState("");
+    const [secretCode, setSecretCode] = useState("");
 
-    const handleClick = (e) => {
+    const openModal = (e) => {
         e.preventDefault();
+        setShow(true)
     }
 
     const returnStep = () => {
         setStep({currentStep: "2"})
     }
 
+    const closeModal = () => {
+        setShow(false);
+    }
+
     return (
         <>
-            <div className="cursor-pointer ml-10 absolute left-0 top-10 text-gray-400" onClick = { () => returnStep() }>
-                <i className = "fas fa-chevron-left mr-3"></i>
-                <span className = "font-semibold">Volver</span>
+            <div className="cursor-pointer flex relative text-gray-400" onClick = { () => returnStep() }>
+                <div className="absolute flex left-0 top-8">
+                    <i className = "fas fa-chevron-left mr-3 mt-1"></i>
+                    <span className = "font-semibold">Volver</span>
+                </div>
             </div>
             <div id="top" className = "absolute right-10 md:right-20 top-5 md:top-10 text-right">
                 <p className = "text-gray-400 font-semibold text-sm uppercase">Step 0{ step.currentStep }/03 <br /> <span className = "normal-case text-base text-gray-500">Verificación por tarjeta</span></p>
@@ -35,21 +47,37 @@ export const ThirdStep = () => {
                 <hr />
                 <div id="form" className = "pt-3">
                     <form className = "flex flex-col">
-                        <FormInput
-                            type = "text"
-                            label = "Número de tarjeta"
-                            placeholder = "Ingrese su número de tarjeta"
-                        />
-                        <FormInput
-                            type = "text"
-                            label = "Código secreto"
-                            placeholder = "Introduzca su código secreto"
-                        />
+                        <div className="relative">
+                            <figure>
+                                <img style = {{
+                                    display: creditNumber.length >= 12 && creditNumber.length <= 18 ? 'flex' : 'none'
+                                }} className = "absolute right-7 top-11 z-20" src= { SuccessCheck } alt="successCheck" />
+                            </figure>
+                            <FormInput
+                                type = "text"
+                                label = "Número de tarjeta"
+                                placeholder = "Ingrese su número de tarjeta"
+                                onChange = { (e) => setCreditNumber(e.target.value) }
+                            />
+                        </div>
+                        <div className="relative">
+                            <figure>
+                                <img style = {{
+                                    display: secretCode.length >= 3 && secretCode.length <= 5 ? 'flex' : 'none'
+                                }} className = "absolute right-7 top-11 z-20" src= { SuccessCheck } alt="successCheck" />
+                            </figure>
+                            <FormInput
+                                type = "text"
+                                label = "Código secreto"
+                                placeholder = "Introduzca su código secreto"
+                                onChange = { (e) => setSecretCode(e.target.value) }
+                            />
+                        </div>
                         <Button 
                             buttonText = "Crear cuenta"
                             backgroundColor = "#4F934A"
                             textColor = "white"
-                            onClick = { handleClick }
+                            onClick = { openModal }
                         />
                     </form>
                     <div id="info" className="text-gray-400 flex justify-center items-center mt-5">
@@ -58,6 +86,15 @@ export const ThirdStep = () => {
                     </div>
                 </div>
             </div>
+            {
+                show ? <Modal 
+                            title = "¡Todo guay!"
+                            content = "Tu cuenta se ha creado correctamente"
+                            buttonText = "Cerrar"
+                            secButtonText = "Vamos para Nuwe"
+                            closeModal = { closeModal }
+                        /> : null
+            }
         </>
     )
 }

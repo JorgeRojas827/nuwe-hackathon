@@ -13,7 +13,7 @@ export const PrevStep = () => {
 
     const [step, setStep] = useContext(StepContext)
 
-    const handleClick = () => {
+    const nextStep = () => {
         setStep({currentStep: "1"})
         console.log(step)
     }
@@ -37,18 +37,14 @@ export const PrevStep = () => {
                         bkgUrl = { PolygonFill }
                         title = "Developers"
                         description = "Cuenta personas para entrar en el mundo dev"
-                        onClick = {
-                            () => handleClick()
-                        }
+                        onClick = { nextStep }
                     />
                     <Card
                         iconUrl = { Briefcase }
                         bkgUrl = { PolygonVoid }
                         title = "Business"
                         description = "Tienes o perteneces a una compañía"
-                        onClick = {
-                            () => handleClick()
-                        }
+                        onClick = { nextStep }
                     />
                 </div>
             </div>

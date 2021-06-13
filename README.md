@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Frontend Nuwe Hackathon  #
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Presentación 👋
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+Hola!, me da gusto que vengas a este repositorio, este contenido ha sido realizado como parte de un Hackathon organizado por [Nuwe](nuwe.io).
 
-### `yarn start`
+El proyecto consiste en realizar la maquetación de un diseño cumpliendo los User Tasks solicitados, el diseño es el siguiente:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](./src/assets/figma.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Muestra 👀
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Un pequeño _showcase_ del proyecto en web.
 
-### `yarn build`
+![](./src/assets/web.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pre-requisitos 📋
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Necesario para correr el proyecto, no me sucede pero hay algunos a quien les pasa que no pueden alzar el repositorio.
 
-### `yarn eject`
+### PostCSS Language Support *extension*
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](./src/assets/postCss.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Comencemos 🚀
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para empezar ejecutemos los siguientes comandos en ese orden:
+~~~
+git clone https://github.com/JorgeRojas827/nuwe-hackathon.git
 
-## Learn More
+cd nuwe-hackathon
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm i
+~~~
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Y listo, puedes probar y jugar con el código :)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Construido con 🛠️
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- ### React JS - Framework JS
+- ### Tailwind CSS - Framework CSS
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licencia 📄
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Este proyecto está bajo la Licencia (MIT) - puedes mirar clonar y utilizar el código como gustes.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ⌨️ con ❤️ por Jorge Rojas 🙌

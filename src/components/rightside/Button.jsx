@@ -11,11 +11,11 @@ export const Button = ({ buttonText, icon, backgroundColor, textColor, boxShadow
                         <img className = "absolute mt-3 ml-8" src= { icon } alt="iconGoogle" />
                     </figure> : null
                 }
-                <button style = {{
+                <input type = "submit" style = {{
                     backgroundColor,
                     color: textColor,
                     boxShadow
-                }} className = "btn sm:w-96 w-80 h-12 py-3 rounded-md text-sm font-semibold" onClick = { onClick }>{ buttonText }</button>    
+                }} className = "btn sm:w-96 w-80 h-12 cursor-pointer py-3 rounded-md text-sm font-semibold" value = { buttonText } onClick = { onClick } /> 
             </div>   
         </>
     );

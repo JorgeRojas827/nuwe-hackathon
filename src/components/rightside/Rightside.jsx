@@ -25,7 +25,7 @@ export const Rightside = () => {
     }
 
     return (
-        <div className = "h-screen lg:w-7/12 w-screen flex relative px-14">
+        <div className = "h-screen lg:w-7/12 w-screen flex px-14">
             {
                 renderStep()
             }
