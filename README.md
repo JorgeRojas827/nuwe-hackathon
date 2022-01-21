@@ -41,7 +41,7 @@ Y listo, puedes probar y jugar con el código :)
 
 ## Construido con 🛠️
 
-- ### React JS - Framework JS
+- ### React JS - Libreria JS
 - ### Tailwind CSS - Framework CSS
 
 
